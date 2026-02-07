@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <ul id="todo-list">
+        <!-- 여기에 todo 아이템이 추가될 예정
+        <li class="todo-item">30분 운동하기</li>
+        <li class="todo-item">AI 공부하기</li>
+        <li class="todo-item">자격증 공부하기</li>
+         -->
+    </ul>
+
+    <script>
+        var todoArray = [
+            {no:1, title:'유튜브 순환운동', done:false},
+            {no:2, title:'홈트 근력운동', done:false},
+            {no:3, title:'30분 걷기운동', done:false},
+            {no:4, title:'타바타 운동', done:false},
+        ]
+        var todolist = document.getElementById('todo-list');
+        todolist.innerHTML = '';
+        // Array의 내용 삭제 splice(시작인텍스, 개수)
+        // todoArray.splice(1,2)
+        // console.log(todoArray);
+
+        // ArrayList 반복
+        //todoArray.forEach(function(item, index, array){
+        //    console.log(item, index, array)
+        //});
+
+        // i++ : i=i+1
+        for(var i=0; i<todoArray.length; i++){
+            var item = todoArray[i];
+            console.log(i,item);
+        }
+    </script>
+</body>
+</html>

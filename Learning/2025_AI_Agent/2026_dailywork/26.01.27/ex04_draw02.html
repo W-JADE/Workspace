@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <ul id="todo-list">
+        <!-- 여기에 todo 아이템이 추가될 예정
+        <li class="todo-item">30분 운동하기</li>
+        <li class="todo-item">AI 공부하기</li>
+        <li class="todo-item">자격증 공부하기</li>
+         -->
+    </ul>
+
+    <script>
+        var todoArray = [
+            {no:1, title:'유튜브 순환운동', done:false},
+            {no:2, title:'홈트 근력운동', done:false},
+            {no:3, title:'30분 걷기운동', done:false},
+            {no:4, title:'타바타 운동', done:false},
+        ]
+        var todoList = document.getElementById('todo-list');
+
+        // todoList UL 태그 내부 목록 비워 준다.
+        todoList.innerHTML = "";
+        // 다시 새로 목록을 그려준다.
+        // 방법2 : createElement(), appendChild() 함수 활용
+        todoArray.forEach(function(item, index, arry){
+            var newElement = document.createElement('li');
+            newElement.innerHTML = `${i} : ${item.title} : ${item.done}`;
+            newElement.className = 'todo-item';
+            todoList.appendChild(newElement);
+        });
+    </script>
+</body>
+</html>
