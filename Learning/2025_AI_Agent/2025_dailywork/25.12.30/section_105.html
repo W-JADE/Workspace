@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>105_IT과학 스크랩</title>
+  <style>
+:root{
+  --bg:#0b0f14; --panel:#121a24; --panel2:#0f1620; --border:#1f2a38;
+  --text:#e8eef6; --muted:#9fb0c3; --accent:#7dd3fc;
+  --r16:16px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg); color:var(--text);
+}
+a{color:inherit; text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px; margin:0 auto; padding:22px}
+.header{
+  border-bottom:1px solid rgba(31,42,56,.8);
+  background:rgba(11,15,20,.88);
+  position:sticky; top:0; z-index:10;
+  backdrop-filter: blur(10px);
+}
+.header-inner{max-width:1100px; margin:0 auto; padding:14px 22px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;}
+h1{margin:0; font-size:18px}
+.sub{margin:4px 0 0; color:var(--muted); font-size:12px}
+.btn{
+  display:inline-block; padding:10px 12px; border-radius:999px;
+  border:1px solid rgba(31,42,56,.9); background:rgba(18,26,36,.7);
+  font-size:12px;
+}
+.btn:hover{border-color: rgba(125,211,252,.35); text-decoration:none}
+.grid-btns{display:grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap:12px; margin-top:18px;}
+.bigbtn{
+  padding:16px 14px; border-radius:16px; border:1px solid rgba(31,42,56,.9);
+  background:rgba(18,26,36,.86);
+  display:flex; flex-direction:column; gap:8px;
+}
+.bigbtn .t{font-weight:800}
+.bigbtn .d{color:var(--muted); font-size:12px}
+.bigbtn:hover{border-color: rgba(125,211,252,.35); text-decoration:none}
+
+.cards{display:grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap:14px; margin-top:16px;}
+.card{
+  border:1px solid rgba(31,42,56,.9); border-radius:16px; overflow:hidden;
+  background:rgba(18,26,36,.86);
+}
+.thumb{
+  height:170px; background:rgba(15,22,32,.85);
+  display:flex; align-items:center; justify-content:center;
+}
+.thumb img{width:100%; height:100%; object-fit:cover; display:block}
+.noimg{color:var(--muted); font-size:12px}
+.body{padding:12px 12px 14px; display:flex; flex-direction:column; gap:10px}
+.title{
+  font-weight:800; font-size:14px; line-height:1.35;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.meta{display:flex; justify-content:space-between; align-items:center; gap:10px}
+.press{
+  color:var(--muted); font-size:12px; max-width:70%;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  border:1px solid rgba(31,42,56,.8); background:rgba(15,22,32,.6);
+  padding:4px 10px; border-radius:999px;
+}
+.badge{
+  font-size:11px; color:var(--accent);
+}
+.note{color:var(--muted); font-size:12px; margin-top:14px}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <div>
+        <h1>105_IT과학 스크랩</h1>
+        <div class="sub">출처: https://news.naver.com/section/105 · 생성: 2026-01-02 17:41:08</div>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn" href="index.html">← ALL</a>
+        <a class="btn" href="https://news.naver.com/section/105" target="_blank" rel="noopener noreferrer">섹션 원문</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cards">
+      
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/092/0002404483" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/092/2026/01/02/0002404483_001_20260102155613526.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/092/0002404483" target="_blank" rel="noopener noreferrer">엔씨소프트, &#x27;리니지 클래식&#x27; 사전예약...2월 7일 한국·대만 오픈</a>
+            <div class="meta">
+              <span class="press">지디넷코리아</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/018/0006193663" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/018/2026/01/02/0006193663_001_20260102110610055.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/018/0006193663" target="_blank" rel="noopener noreferrer">현신균 LG CNS 대표 &quot;10년 전 대비 매출 두배, 올해 AX 국내 선도 사업자 지위 굳힌다&quot;</a>
+            <div class="meta">
+              <span class="press">이데일리</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/011/0004574095" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/011/2026/01/02/0004574095_001_20260102162508589.png?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/011/0004574095" target="_blank" rel="noopener noreferrer">[신년사] 송경희 개인정보위원장 &quot;중대 유출 사고에 매출 10% 과징금 부과…올해 보호 체계 강화&quot;</a>
+            <div class="meta">
+              <span class="press">서울경제</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/025/0003493942" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/025/2026/01/02/0003493942_001_20260102052333718.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/025/0003493942" target="_blank" rel="noopener noreferrer">KT 위약금 면제 첫날, 가입자 1만명 떠났다…4분의 1은 알뜰폰 이동</a>
+            <div class="meta">
+              <span class="press">중앙일보</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/009/0005615386" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/009/2026/01/02/0005615386_001_20260102134110816.jpeg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/009/0005615386" target="_blank" rel="noopener noreferrer">사람 중심 AI·글로벌 팬덤… 정신아 카카오 대표 “새로운 15년 설계”</a>
+            <div class="meta">
+              <span class="press">매일경제</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/008/0005299477" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/008/2026/01/02/0005299477_001_20260102113117793.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/008/0005299477" target="_blank" rel="noopener noreferrer">정우진 NHN 대표 &quot;올해 전 그룹사에 AI 업무 혁신 뿌리내릴 것&quot;</a>
+            <div class="meta">
+              <span class="press">머니투데이</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/008/0005299422" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/008/2026/01/02/0005299422_001_20260102103311842.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/008/0005299422" target="_blank" rel="noopener noreferrer">韓 유일 &#x27;글로벌 AI 100대 인재&#x27; 권인소 교수, KIST 국가특임연구원으로</a>
+            <div class="meta">
+              <span class="press">머니투데이</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/008/0005299482" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/008/2026/01/02/0005299482_001_20260102113615567.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/008/0005299482" target="_blank" rel="noopener noreferrer">&quot;AI 기업 도약→통신 신뢰 회복&quot;…확 바뀐 이통3사 신년사</a>
+            <div class="meta">
+              <span class="press">머니투데이</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/031/0000993871" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/031/2026/01/02/0000993871_001_20260102171513347.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/031/0000993871" target="_blank" rel="noopener noreferrer">이재용 사법 리스크 털어낸 삼성전자, ESG 평가 &#x27;A&#x27;</a>
+            <div class="meta">
+              <span class="press">아이뉴스24</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/119/0003044098" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/119/2026/01/02/0003044098_001_20260102171509355.jpeg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/119/0003044098" target="_blank" rel="noopener noreferrer">업스테이지, 프롬 스크래치 논란 공개 검증…“&#x27;솔라 오픈&#x27;은 독립 모델”</a>
+            <div class="meta">
+              <span class="press">데일리안</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/031/0000993869" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/031/2026/01/02/0000993869_001_20260102172108232.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/031/0000993869" target="_blank" rel="noopener noreferrer">노태문의 고심...갤럭시 S26 가격 동결이냐, 인상이냐</a>
+            <div class="meta">
+              <span class="press">아이뉴스24</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/015/0005231993" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/015/2026/01/02/0005231993_001_20260102171311322.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/015/0005231993" target="_blank" rel="noopener noreferrer">신규 상장 바이오社, 신약 날고 진단은 부진</a>
+            <div class="meta">
+              <span class="press">한국경제</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+    </div>
+  </div>
+</body>
+</html>

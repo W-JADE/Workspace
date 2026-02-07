@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>104_세계 스크랩</title>
+  <style>
+:root{
+  --bg:#0b0f14; --panel:#121a24; --panel2:#0f1620; --border:#1f2a38;
+  --text:#e8eef6; --muted:#9fb0c3; --accent:#7dd3fc;
+  --r16:16px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg); color:var(--text);
+}
+a{color:inherit; text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px; margin:0 auto; padding:22px}
+.header{
+  border-bottom:1px solid rgba(31,42,56,.8);
+  background:rgba(11,15,20,.88);
+  position:sticky; top:0; z-index:10;
+  backdrop-filter: blur(10px);
+}
+.header-inner{max-width:1100px; margin:0 auto; padding:14px 22px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;}
+h1{margin:0; font-size:18px}
+.sub{margin:4px 0 0; color:var(--muted); font-size:12px}
+.btn{
+  display:inline-block; padding:10px 12px; border-radius:999px;
+  border:1px solid rgba(31,42,56,.9); background:rgba(18,26,36,.7);
+  font-size:12px;
+}
+.btn:hover{border-color: rgba(125,211,252,.35); text-decoration:none}
+.grid-btns{display:grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap:12px; margin-top:18px;}
+.bigbtn{
+  padding:16px 14px; border-radius:16px; border:1px solid rgba(31,42,56,.9);
+  background:rgba(18,26,36,.86);
+  display:flex; flex-direction:column; gap:8px;
+}
+.bigbtn .t{font-weight:800}
+.bigbtn .d{color:var(--muted); font-size:12px}
+.bigbtn:hover{border-color: rgba(125,211,252,.35); text-decoration:none}
+
+.cards{display:grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap:14px; margin-top:16px;}
+.card{
+  border:1px solid rgba(31,42,56,.9); border-radius:16px; overflow:hidden;
+  background:rgba(18,26,36,.86);
+}
+.thumb{
+  height:170px; background:rgba(15,22,32,.85);
+  display:flex; align-items:center; justify-content:center;
+}
+.thumb img{width:100%; height:100%; object-fit:cover; display:block}
+.noimg{color:var(--muted); font-size:12px}
+.body{padding:12px 12px 14px; display:flex; flex-direction:column; gap:10px}
+.title{
+  font-weight:800; font-size:14px; line-height:1.35;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.meta{display:flex; justify-content:space-between; align-items:center; gap:10px}
+.press{
+  color:var(--muted); font-size:12px; max-width:70%;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  border:1px solid rgba(31,42,56,.8); background:rgba(15,22,32,.6);
+  padding:4px 10px; border-radius:999px;
+}
+.badge{
+  font-size:11px; color:var(--accent);
+}
+.note{color:var(--muted); font-size:12px; margin-top:14px}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <div>
+        <h1>104_세계 스크랩</h1>
+        <div class="sub">출처: https://news.naver.com/section/104 · 생성: 2026-01-02 17:40:57</div>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn" href="index.html">← ALL</a>
+        <a class="btn" href="https://news.naver.com/section/104" target="_blank" rel="noopener noreferrer">섹션 원문</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cards">
+      
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/056/0012097331" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/056/2026/01/02/0012097331_001_20260102095837490.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/056/0012097331" target="_blank" rel="noopener noreferrer">중국 BYD, 지난해 전기차 225만여 대 판매…“테슬라 추월”</a>
+            <div class="meta">
+              <span class="press">KBS</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/001/0015824672" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/001/2026/01/02/AKR20260101058651108_01_i_P4_20260102162312859.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/001/0015824672" target="_blank" rel="noopener noreferrer">이란 경제난 항의 시위 격화…시민·군인 최소 6명 사망(종합)</a>
+            <div class="meta">
+              <span class="press">연합뉴스</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/009/0005615544" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/009/2026/01/02/0005615544_001_20260102171920917.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/009/0005615544" target="_blank" rel="noopener noreferrer">트럼프 SNS 대박 주역은 &#x27;30세 보좌관&#x27;</a>
+            <div class="meta">
+              <span class="press">매일경제</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/666/0000092181" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/666/2026/01/02/0000092181_001_20260102071012855.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/666/0000092181" target="_blank" rel="noopener noreferrer">올해 팔순 트럼프, 건강 이상설 일축…&quot;내 건강 완벽해&quot;</a>
+            <div class="meta">
+              <span class="press">경기일보</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/214/0001471896" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/214/2026/01/02/0001471896_001_20260102153609585.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/214/0001471896" target="_blank" rel="noopener noreferrer">&quot;미국, 평택기지 비행대대 비활성화&quot;</a>
+            <div class="meta">
+              <span class="press">MBC</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/215/0001236547" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/215/2026/01/02/A202601020249_1_20260102172711637.png?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/215/0001236547" target="_blank" rel="noopener noreferrer">&quot;임대인 집 관리 소홀시 개입&quot;…첫날부터 광폭 행보</a>
+            <div class="meta">
+              <span class="press">한국경제TV</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/015/0005232009" target="_blank" rel="noopener noreferrer">
+            <img src="https://ssl.pstatic.net/static.news/image/news/ogtag/navernews_800x420_20221201.jpg" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/015/0005232009" target="_blank" rel="noopener noreferrer">금값 뛰자 밀수 기승…각국 중앙은행, 직접 매입 나서</a>
+            <div class="meta">
+              <span class="press">한국경제</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/001/0015825385" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/001/2026/01/02/PGT20250603044101009_P4_20260102111324032.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/001/0015825385" target="_blank" rel="noopener noreferrer">美스타트업서 가장 인기있는 창업자 학위는…석박사 아닌 &#x27;중퇴&#x27;</a>
+            <div class="meta">
+              <span class="press">연합뉴스</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/654/0000159396" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/654/2026/01/01/0000159396_001_20260101140811979.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/654/0000159396" target="_blank" rel="noopener noreferrer">미국 국무부 &quot;한국 정통망법 중대 우려…미 플랫폼기업에 부정적&quot;</a>
+            <div class="meta">
+              <span class="press">강원도민일보</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/374/0000483995" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/374/2026/01/02/0000483995_001_20260102171709647.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/374/0000483995" target="_blank" rel="noopener noreferrer">베네수엘라 마두로 대통령 &quot;석유 원한다면 美투자 받을 준비&quot;</a>
+            <div class="meta">
+              <span class="press">SBS Biz</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/001/0015826490" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/001/2026/01/02/PRU20251220082901009_P4_20260102171314216.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/001/0015826490" target="_blank" rel="noopener noreferrer">&quot;美, 평택기지 비행대대 운용중단&quot;…주한미군 감축 관련성 주목(종합)</a>
+            <div class="meta">
+              <span class="press">연합뉴스</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <a class="thumb" href="https://n.news.naver.com/mnews/article/020/0003686422" target="_blank" rel="noopener noreferrer">
+            <img src="https://imgnews.pstatic.net/image/020/2026/01/02/0003686422_001_20260102171011209.jpg?type=w800" alt="thumbnail">
+          </a>
+          <div class="body">
+            <a class="title" href="https://n.news.naver.com/mnews/article/020/0003686422" target="_blank" rel="noopener noreferrer">오픈AI 직원 ‘평균 22억’ 주식보상…AI 인재 잡으려 ‘통 큰 베팅’</a>
+            <div class="meta">
+              <span class="press">동아일보</span>
+              <span class="badge">스크랩됨</span>
+            </div>
+          </div>
+        </article>
+        
+    </div>
+  </div>
+</body>
+</html>
