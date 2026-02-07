@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자동차 정보 상세 보기</h1>
+    <ul>
+        <li>번호: <%=car._id %></li>
+        <li>차종: <%=car.name %></li>
+        <li>가격: <%=car.price %></li>
+        <li>연식: <%=car.year %></li>
+        <li>제조사: <%=car.company %></li>
+    </ul>
+    <p>
+        <a href="/car/delete?_id=<%=car._id %>">삭제</a>
+        <a href="/car/modify?_id=<%=car._id %>">수정</a>
+    </p>
+</body>
+</html>
