@@ -1,0 +1,44 @@
+<!--  
+# 1. join-us.html 
+# 2. 신상 정보를 입력받을 수 있는 form 구현해보기
+# 3. 신상 정보 [성명,나이,성별,전화번호,주소,email 등]
+# 4. main.py에서 데이터를 전송 받아서 터미널에 출력 or 파일 저장
+
+(설치 모듈)
+*pip install jinja2
+*pip install Basemodel
+*pip install FastAPI
+*pip install requests
+-->
+
+# 직접 만들어본 html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FastAPI 실습과제</h1>
+    <h3>개인 정보 입력 form</h3>
+    <form action="http://127.0.0.1:8000/Thank you" method="get">
+        <fieldset>
+            <legend>자기소개</legend>
+            <label for="">성명: </label>
+            <input type="text" name="name" value=""><br>
+            <label for="">나이: </label>
+            <input type="text" name="age" value=""><br>
+            <label for="">성별: </label>
+            <input type="text" name="gender" value=""><br>
+            <label for="">핸드폰번호: </label>
+            <input type="text" name="phone_number" value=""><br>
+            <label for="">이메일: </label>
+            <input type="text" name="email" value=""><br>
+            <label for="">주소: </label>
+            <input type="text" name="address" value=""><br>
+            <input type="submit" value="확인">
+        </fieldset>
+    </form>
+</body>
+</html>
