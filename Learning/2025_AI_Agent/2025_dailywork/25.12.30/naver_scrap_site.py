@@ -1,3 +1,17 @@
+'''
+# 필요한 모듈 설치
+pip install requests         # HTTP 요청을 보내는 담당
+pip install beautifulsoup4   # 문서 파싱하여 요소 추출 담당
+pip install pandas           # 수집 데이터를 테이터 프레임으로 정리하는 담당
+
+
+1. template.html             # vs code에서 html 고정 파일 준비
+2. crawling_homework.py      # 메인으로 부를 파일 준비
+3. result.html               # 결과가 확인되는 파일 준비
+
+네이버 news에서 생활/문화 영역 음식/맛집 헤드라인의 상위 5개 기사의 url과 사진url을
+'검사'를 통해 추출한 뒤 파이썬 코드로 코딩해보기
+'''
 import re
 import time
 import html
