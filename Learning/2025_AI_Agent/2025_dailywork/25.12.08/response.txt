@@ -1,0 +1,17 @@
+학생들의 평균 점수를 계산하는 함수를 Python으로 작성해 보겠습니다. 이 함수는 숫자 리스트를 입력으로 받아서 평균값을 계산하고, 소수점 둘째 자리까지 포맷을 맞춰서 출력합니다. 아래는 그 코드입니다.
+
+```python
+def calculate_average(scores):
+    if not scores:  # 입력 리스트가 비어있는지 확인
+        return 0.0
+    
+    average = sum(scores) / len(scores)  # 평균 계산
+    return round(average, 2)  # 소수점 둘째 자리까지 반올림
+
+# 사용 예시
+scores = [85, 92, 78, 90]
+average_score = calculate_average(scores)
+print("학생들의 평균 점수:", average_score)
+```
+
+이 함수를 사용할 때, 리스트의 점수를 입력으로 넣으면 평균 점수가 소수점 둘째 자리까지 출력됩니다. 예를 들어, `[85, 92, 78, 90]`라는 리스트를 넣으면, 평균 점수는 `85.25`가 됩니다.
