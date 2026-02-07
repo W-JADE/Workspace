@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>초등학교 저학년 사칙연산 계산기</h1>
+    항1 : <input type="text" id = "a"><br>
+    항2 : <input type="text" id = "b"><br>
+    연산자 : <select id="oper">
+        <option value="plus">+</option>
+        <option value="min">-</option>
+        <option value="mult">*</option>
+        <option value="div">/</option>
+    </select>
+    <button id="btn">확인</button>
+    <div>결과: <span id="result">-</span></div>
+    <script>
+        // btn을 클릭하면 항1, 항2의 값을 서버에 전송하고 그 결과를 돌려 받는다.
+        console.log("XMLHttpRequest ajax 계산기 시작");
+        var BASE_URL = "http://127.0.0.1:8000"
+
+        var inputA = document.getElementById("a");
+        var inputB = document.getElementById("b");
+        var selectoper = document.getElementById("oper");
+        var buttonBtn = document.getElementById("btn");
+        var resultSpan = document.getElementById("result");
+
+        buttonBtn.onclick = function(event) {
+            var a = inputA.value;
+            var b = inputB.value;
+            var oper = selectoper.value;
+            console.log("버튼 눌렀다!", a,b,oper);
+                 
+        // 오늘 배운 ajax를 이용해서 fastapi서버와 통신 되는 기능 구현해보기
+        
+            var url = BASE_URL + "/" + oper + "/" + a + "/" + b;
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function() {
+            console.log("확인 :", xhr.responseText);
+            resultSpan.innerText = xhr.responseText;
+            };
+
+            xhr.open("GET",url,true);
+            xhr.send()
+        };
+
+    </script>
+</body>
