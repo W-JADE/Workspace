@@ -1,0 +1,12 @@
+{
+    "app_name": "RAG Demo App",
+    "version": "1.0",
+    "settings": {
+        "language": "ko",
+        "max_tokens": 200,
+        "use_cache": true},
+    "api": {
+        "endpoint": "https://api.example.com",
+        "timeout": 5
+    }
+}
