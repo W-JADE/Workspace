@@ -8,7 +8,7 @@
 | Folder | Contents | Goal |
 | :--- | :--- | :--- |
 | [**Learning/**](./Learning) | Python 기초, AI 리터러시, daily_homework | 최신 기술 스택의 내재화 / 역량 강화 |
-| [**Mini_Projects/**](./Mini_Projects) | 실무 중심의 소규모 자동화 도구 이용, 협업 프로젝트 | 협동심 / 문제 해결 / 기술 강화 |
+
 
 
 ---
