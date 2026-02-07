@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid violet;
+            margin: 3px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input id="animalInput" type="text" placeholder="동물이름 입력">
+    <button id="addBtn">동물 이름 추가 버튼</button>
+    <div id = "box">
+        <div>토끼</div>
+        <!-- <div>강아지</div> -->
+        <!-- <div>고양이</div> -->
+    </div>
+
+    <!-- 자바스크립트에서 태그 엘리먼트 생성 및 삽입 방법 -->
+    <!-- 1. 태그 엘리먼트 생성(createElement)
+         2. 태그를 document에 삽입(appendChild) -->
+    <script>
+        var box = document.getElementById('box');
+        //console.log(box);
+
+        var todoInput = document.getElementById('TO DO');
+
+        document.getElementById('appendBtn').onclick = function() {
+        //appendBtn 클릭하면 다음 실행 되도록 해볼 것
+            var newDiv = document.createElement('div');
+            newDiv.innerHTML = todoInput.value + "<button> 삭제</button>";
+            box.appendChild(newDiv);
+            todoInput.value = "";
+            todoInput.focus();
+        }
+    </script>
+</body>
+</html>

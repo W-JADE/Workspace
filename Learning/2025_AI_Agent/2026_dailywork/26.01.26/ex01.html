@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--외부에 자바스크립트를 쓰는 방식 : 익스터널 방식이라고 한다 -->
+    <!-- 익스터널 방식의 자바스크립트 불러오기 -->
+    <script>
+        // 페이지가 브라우저에 모두 로드되면 자바스크립트 실행 (load 이벤트)
+        window.onload = function() {
+            // 인터널 방식의 자바스크립트 선언
+            var interBtn = document.getElementById('interBtn');
+            //console.log(interBtn);
+            console.dir(interBtn);
+
+            interBtn.onclick = function() {
+                // 배경색 변경
+                // 팝업 출력 ...
+                alert("인터널 OK!");
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>자바스크립트 기초 강의</h1>
+    <!-- 주석:ctrl+/ : 인라인 방식의 자바스크립트 선언 -->
+    <!-- 인라인 방식의 자바스크립트 선언: React.js에서 많이 사용 함 -->
+<button onclick="javascript:alert('인라인 OK')">인라인 버튼! (인라인)</button><br><br>
+<button id="interBtn">인터널 버튼! (인터널)</button><br><br>
+<button id="externBtn">익스터널 버튼! (익스터널)</button><br>
+
+<!-- 익스터널 방식의 자바스크립트 불러오기 -->
+<script src="./ex01.js"></script>
+
+</body>
+</html>
